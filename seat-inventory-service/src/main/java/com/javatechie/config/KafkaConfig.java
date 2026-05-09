@@ -13,6 +13,7 @@ public class KafkaConfig {
 
     @Bean
     public NewTopic createTransactionTopic() {
+
         return new NewTopic(SEAT_RESERVED_TOPIC, 3, (short) 1);
     }
 

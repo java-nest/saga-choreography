@@ -18,7 +18,7 @@ public class PaymentStatusListener {
     private SeatInventoryService service;
 
     public PaymentStatusListener(SeatInventoryService service) {
-        this.service = service;
+            this.service = service;
     }
 
     @KafkaListener(topics = PAYMENT_EVENTS_TOPIC, groupId = SEAT_EVENT_GROUP)
